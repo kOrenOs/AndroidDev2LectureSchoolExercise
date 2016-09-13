@@ -17,4 +17,22 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="71dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back to main"
+        android:id="@+id/backButton"
+        android:onClick="backButtonActivity"
+        android:layout_below="@+id/putResultText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/putResultText"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/backButton"
+        android:text="put result" />
 </RelativeLayout>

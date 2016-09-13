@@ -27,4 +27,22 @@
         android:onClick="buttonAction"
         android:layout_below="@+id/editText"
         android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start activity with result"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:onClick="resultButtonAction"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no result"
+        android:id="@+id/resultText"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/button2" />
 </RelativeLayout>
