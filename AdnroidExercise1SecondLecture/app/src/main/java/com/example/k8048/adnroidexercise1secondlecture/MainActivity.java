@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == SHOW_NEW_ACTIVITY && resultCode == RESULT_OK){
             Bundle extras = data.getExtras();
-            //String text = extras.get("text").toString();
-            //TextView textResult = (TextView) findViewById(R.id.resultText);
-            //textResult.setText(text);
+            String text = extras.get("Text").toString();
+            TextView textResult = (TextView) findViewById(R.id.resultText);
+            textResult.setText(text);
         }
     }
 }
